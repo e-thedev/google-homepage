@@ -28,3 +28,12 @@ nav {
     width: 100%;
     transition: box-shadow 100ms;
     outline: none;
+}
+.s-input .search-icon {
+    width: 20px;
+    opacity: 4;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    color: #9aa0a6;
+}
