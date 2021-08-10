@@ -1,155 +1,47 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mock Google Homepage</title>
-    <style>
-    {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        font-size: 14px;
-        color: #222;
-        font-family: Roboto, arial, sans-serif;
-        cursor: pointer;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-right: 30px;
-        margin-top: 0px;
-        height: 60px;
-        flex-shrink: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
-    nav a {
-        display: flex;
-        font-size: 14px;
-        display: inline-block;
-        line-height: 24px;
-        font-weight: 400;
-        color: black;
-        padding: 5px 6.7px;
-        text-decoration: none;
-    }
-    a .left: :first-of-type {
-        margin-left: 15px;
-        display: inline-block;
-        padding: 5px;
-        margin: 0 5px;
-    }
-    nav img:hover {
-        opacity: 8;
-    }
-    .section-1 {
-        flex: 1;
-    }
-    .section-1 .logo {
-        display: block;
-        margin: 0px auto;
-        margin-top: 205px;
-    }
-    .s-box {
-        width: auto;
-        max-width: 584px;
-        position: relative;
-        margin: 0 auto;
-        padding-top: 6px;
-        text-align: center;
-    }
-    .s-box .s-input {
-        width: 100%;
-        max-width: 584px;
-        background: #fff;
-        display: flex;
-        border: 1px solid #dfe1e5;
-        box-shadow: none;
-        border-radius: 24px;
-        z-index: 3;
-        height: 44px;
-        margin: 0 auto;
-    }
-    .s-box .s-input:hover {
-        border: 1px solid;
-        box-shadow: 0 0 2px rgba(0,0,0,0.05),
-                    0 0 2px rgba(0,0,0,0.05),
-                    0 0 3px rgba(0,0,0,0.05),
-                    0 0 4px rgba(0,0,0,0.05),
-                    0 0 5px rgba(0,0,0,0.05),
-                    0 0 4px rgba(0,0,0,0.05),
-                    0 0 5px rgba(0,0,0,0.05)
-    }
-    .s-input .search-icon {
-        display: flex;
-        margin-top: 3px;
-        color: #9aa0a6;
-        height: 20px;
-        width: 20px;
-        line-height: 24px;
-        position: relative;
-    }
-    .s-input .vs-input {
-        display: flex;
-        width: 14px;
-        position: absolute;
-        top: 13px;
-        right: 24px;
-    }
-    </style>
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Nav Bar-->
-<nav>
-    <div>
-        <a class="left" href="#">About</a>
-        <a class="left" href="#">Store</a>
-    </div>
-    <a href="#">Gmail</a>
-    <a href="#">Images</a>
-    <img src="outline_apps_black_24dp.png" alt="">
-    <img src="outline_account_circle_black_24dp.png" alt="">
-</nav>
-    <!--Google Image and Search-->
-    <section class="section-1">
-        <img src="googlelogo_color_272x92dp.png" class="logo">
-        <form><br><br>
-            <div class="s-box">
-                <div class="s-box2">
-                <input type="text" class="s-input">
-                <input type="submit" class="s-btn" value="Google Search">
-                <input type="submit" class="s-btn" value="I'm Feeling Lucky">
-                <!--search icon & vs input-->
-                    <div class="vs-input">
-                    <img src="Google_mic.svg (1).png" alt="vs-input">
-                    </div>
-                        <div class="search-icon">
-                        <img src="outline_search_black_24dp.png" alt="search-icon">
-                        </div>
-                </div>                
-            </div>
-        </form>
-    </section>
+    <nav class="nav">
+        <a class="nav-link" href="#">Gmail</a>
+        <a class="nav-link" href="#">Images</a>
+        <a class="nav-link-apps" href="#"><img src="outline_apps_black_24dp.png" alt=""></a>
+        <img class="E-logo" src="E.png" alt="">
+    </nav>
+    <!--Main Body-->
+    <main class="main">
+        <img class="google-logo" src="googlelogo_color_272x92dp.png" alt="">
+        <div class="searchbar">
+            <img class="search-icon" src="serch-icon.png" alt="">
+            <input class="search-input" type="text">
+            <button>
+                <img class="vs-mic" src="voice-search-mic.png" alt="">
+            </button>
+        </div>
+        <!--Search Buttons-->
+        <div class="search-buttons">
+            <a href="#"><button class="button-search">Google Seaerch</button></a>
+            <a href="#"><button class="button-search">I'm Feeling Lucky</button></a>
+        </div>
+    </main>
     <!--Footer-->
-    <footer>
-        <div class="links">
-            <div class="link-1">
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">About</a>
-                <a href="#">How Search Works</a>
-            </div>
-            <div class="link-2">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-            </div>
+    <footer class="footer">
+        <div class="left-side">
+            <a class="footer-link" href="#">About</a>
+            <a class="footer-link" href="#">Advertising</a>
+            <a class="footer-link" href="#">Business</a>
+            <a class="footer-link" href="#">How Search Works</a>
+        </div>
+        <div class="right-side">
+            <a class="footer-link" href="#">Privacy</a>
+            <a class="footer-link" href="#">Terms</a>
+            <a class="footer-link" href="#">Settings</a>
         </div>
     </footer>
 </body>
