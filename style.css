@@ -30,7 +30,108 @@ button {
 }
 .nav-link {
     opacity: 0.85;
+    margin-right: 9px;
 }
 .nav-link:hover {
     text-decoration: underline;
 }
+.nav-link-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.nav-link-apps:hover {
+    background-color: #f0f0f0;
+}
+.E-logo {
+    margin-right: 12px;
+    margin-top: 8px;
+}
+.E-logo:hover {
+    transition: .5s;
+    background-color: #f0f0f0;
+}
+/*Main Body*/
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    margin-top: 50px;
+}
+.google-logo {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 26px;
+}
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+}
+.searchbar:hover, .searchbar:focus-within {
+    border-color: white;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.search-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.vs-mic {
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+.search-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+.button-search {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: var(--button-search-background);
+    color: var(--button-search-font);
+    font-size: 14px;
+}
+.button-search: :hover {
+    background-color: #f0f0f0;
+    box-shadow:0 1px 1px rgb(000/10%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
