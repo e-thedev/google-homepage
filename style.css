@@ -51,16 +51,17 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 6px;
 }
 .nav-link-apps:hover {
     background-color: #f0f0f0;
 }
-.E-logo {
+.alien-icon {
     margin-right: 12px;
     margin-top: 8px;
+    border-radius: 50%;
 }
-.E-logo:hover {
+.alien-icon:hover {
     transition: .5s;
     background-color: #f0f0f0;
 }
@@ -74,7 +75,7 @@ button {
     height: 55vh;
     margin-top: 50px;
 }
-.google-logo {
+.dope-logo {
     width: 500px;
     height: 500px;
     margin-bottom: -111px;
