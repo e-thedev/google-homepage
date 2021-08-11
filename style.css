@@ -26,8 +26,16 @@ button {
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 14px;
+    justify-content: space-between;
+}
+.nav-right, .nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-left {
+    margin-left: 12px;
 }
 .nav-link {
     opacity: 0.85;
@@ -43,7 +51,7 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 12px;
+    margin-right: 15px;
 }
 .nav-link-apps:hover {
     background-color: #f0f0f0;
@@ -67,18 +75,19 @@ button {
     margin-top: 50px;
 }
 .google-logo {
-    width: 272px;
-    height: 92px;
-    margin-bottom: 26px;
+    width: 500px;
+    height: 500px;
+    margin-bottom: -111px;
+    margin-top: -132px;
 }
 .searchbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 500px;
-    height: 45px;
+    height: 20px;
     padding: 10px;
-    border: 1px solid var(--border-color);
+    border: 1px;
     border-radius: 30px;
 }
 .searchbar:hover, .searchbar:focus-within {
@@ -99,6 +108,7 @@ button {
     width: 25px;
     height: 25px;
     border: none;
+    margin-top: 8px;
 }
 .search-buttons {
     display: flex;
@@ -146,7 +156,7 @@ button {
     margin-right: 30px;
 }
 .footer-link {
-    display: block;
+    display: inline-block;
     padding: 10px 0 10px 30px
 }
 .footer-link:hover {
